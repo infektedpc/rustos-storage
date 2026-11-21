@@ -1,0 +1,15 @@
+[package]
+name = "rustos-storage"
+version = "0.1.0"
+edition = "2021"
+description = "RustOS storage drivers: block devices, ATA/IDE PIO, AHCI SATA, MBR/GPT partition parsing"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "rustos_storage"
+path = "src/lib.rs"
+
+[profile.dev]
+panic = "abort"
+[profile.release]
+panic = "abort"
